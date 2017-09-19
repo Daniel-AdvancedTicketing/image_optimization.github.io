@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Image Example Test</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<style>
+		body {
+			font-family: 'Open Sans', sans-serif;
+			text-align:  center;
+		}
+		h1 {
+			font-weight:  300;
+			text-transform: uppercase;
+		}
+	</style>
+</head>
+<body>
+	<h1>Example Comparison</h1>
+	<p>Images below are displayed at 640 pixels width and 480 pixels height.</p>
+	<div>
+		<img src="southampton_very_high_small.jpg" alt="" style=" height: 480px; width: 640px; ">
+		<p>This first image is saved with those dimensions specifically (it's displayed at 100% size), with a typical <strong>80%</strong> quality jpeg compression from Photoshop. It weighs <strong>101kb</strong>.</p>
+	</div>
+	<div>
+		<img src="southampton_medium.jpg" alt="" style=" height: 480px; width: 640px; ">
+		<p>This second image, however, is actually scaled down by the browser. Its natural size is 1280x960px, but its compression was set to <strong>30%</strong> quality when saved from Photoshop. As a result, it weighs <strong>72kb</strong>.</p>
+	</div>
+	<div>
+		<img src="southampton_low.jpg" alt="" style=" height: 480px; width: 640px; ">
+		<p>This third image, however, is actually scaled down by the browser. Its natural size is 1280x960px, but its compression was set to <strong>10%</strong> quality when saved from Photoshop. As a result, it weighs <strong>47kb</strong>.</p>
+	</div>
+	<div>
+		<img src="southampton_zero.jpg" alt="" style=" height: 480px; width: 640px; ">
+		<p>This fouth image, however, is actually scaled down by the browser. Its natural size is 1280x960px, but its compression was set to <strong>0 (zero!)</strong> quality when saved from Photoshop. As a result, it weighs <strong>37kb</strong>.</p>
+	</div>
+</body>
+</html>
