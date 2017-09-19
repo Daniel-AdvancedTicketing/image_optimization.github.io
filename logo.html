@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Image Example Test</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<style>
+		body {
+			font-family: 'Open Sans', sans-serif;
+			text-align:  center;
+		}
+		h1 {
+			font-weight:  300;
+			text-transform: uppercase;
+		}
+		img {
+			display: inline-block;
+    		vertical-align: middle;
+    		max-width: 128px;
+    		height: auto;
+		}
+	</style>
+</head>
+<body>
+	<h1>TinyPNG Example Comparison</h1>
+	<p>Images below are displayed at 128px pixels max-width, their natural size is 256x256px.</p>
+	<div>
+		<img src="Nottingham_Forest.png" alt="">
+		<p>Original image. It weighs <strong>28kb</strong>.</p>
+	</div>
+	<div>
+		<img src="Nottingham_Forest_TinyPNG.png" alt="">
+		<p>This second image, optimized with TinyPNG. As a result, it weighs <strong>6.7kb</strong>.</p>
+	</div>
+	<div>
+		<img src="Nottingham_Forest_TinyPNG_x13.png" alt="">
+		<p>This third image, optimized with TinyPNG again and again till no more saving could be made. As a result, it weighs <strong>3.5kb</strong>.</p>
+	</div>
+</body>
+</html>
